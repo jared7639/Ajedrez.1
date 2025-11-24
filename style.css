@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 10px 0;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 10px;
+}
+
+#left-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#boardWrap {
+  display: grid;
+  grid-template-columns: repeat(9, 60px);
+  grid-template-rows: repeat(9, 60px);
+  user-select: none;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.light {
+  background: #f5deb3;
+}
+
+.dark {
+  background: #8b4513;
+  color: white;
+}
+
+.coord-left, .coord-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background: #ddd;
+}
+
+.point {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.point-point {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: red;
+}
+
+#infoPanel {
+  margin-top: 15px;
+  text-align: center;
+}
+
+#toast {
+  margin-top: 10px;
+  color: red;
+  height: 20px;
+}
+
+#scoresPanel {
+  width: 300px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+#scoresPanel h2 {
+  margin: 0 0 10px 0;
+}
+
+#scoresPanel table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+#scoresPanel th, #scoresPanel td {
+  border: 1px solid #aaa;
+  padding: 5px;
+  text-align: center;
+}
+
+#buttons {
+  margin-bottom: 10px;
+}
+
+button {
+  cursor: pointer;
+  background: #eee;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #ddd;
+}

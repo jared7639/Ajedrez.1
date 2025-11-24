@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>♟️ Juego de Ajedrez</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>♟️ Juego de Ajedrez</h1>
+
+<div id="container">
+  <div id="left-panel">
+    <div id="buttons">
+      <!-- Selector de dificultad -->
+      <select id="difficulty">
+        <option value="1">Fácil</option>
+        <option value="2">Medio</option>
+        <option value="3">Extremo</option>
+      </select>
+
+      <!-- NUEVO: Selector de modo de juego -->
+      <select id="mode">
+        <option value="ai">Jugador vs IA</option>
+        <option value="pvp">Jugador vs Jugador</option>
+      </select>
+
+      <button id="newGame">Nuevo Juego</button>
+    </div>
+
+    <div id="boardWrap"></div>
+
+    <div id="infoPanel">
+      <p id="status"></p>
+      <p id="lvl"></p>
+      <p id="lives"></p>
+      <p id="score"></p>
+      <p id="turn"></p>
+      <p id="toast"></p>
+    </div>
+  </div>
+
+  <div id="scoresPanel">
+    <h2>🏆 Tabla de Récords</h2>
+    <button id="downloadScores">📥 Descargar</button>
+    <button id="resetScores">🗑️ Borrar</button>
+    <div id="scores"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
